@@ -1,34 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+//reafce
+import React from 'react'
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1 className='text-red-500'>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className='bg-red-500 p-12'>
+      <h1 className='text-5xl font-bold text-white'>
+        Tailwind CSS 4.0
+      </h1>
+      <button className='bg-blue-500 text-white text-2x1 font-bold px-6 border-4  py-4 rounded-md mt-6'>
+        Button
+      </button>
+      <input
+        type='text'
+        placeholder='Input Field'
+        className='bg-white text-lg text-amber-500  mt-6 p-4 border-4 rounded-md'
+      />
+    </div>
   )
 }
 
