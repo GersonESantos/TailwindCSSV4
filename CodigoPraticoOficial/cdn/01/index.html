@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDN - Content Delivery Network</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+    <div class="max-w-4xl mx-auto p-6">
+        <h1 class="text-3xl font-bold mb-4">CDN - Content Delivery Network</h1>
+        <p class="mb-4">
+            Uma CDN (Content Delivery Network) é uma rede de servidores distribuídos geograficamente que trabalham juntos para fornecer conteúdo da web de forma rápida e eficiente aos usuários. O objetivo principal de uma CDN é reduzir a latência e melhorar o desempenho do carregamento de páginas, entregando o conteúdo a partir do servidor mais próximo do usuário.
+        </p>
+        <h2 class="text-2xl font-semibold mb-2">Vantagens de usar uma CDN:</h2>
+        <ul class="list-disc list-inside mb-4">
+            <li><strong>Melhoria na velocidade de carregamento:</strong> Ao distribuir o conteúdo em vários servidores ao redor do mundo, uma CDN pode reduzir o tempo de carregamento das páginas.</li>
+            <li><strong>Redução da carga no servidor de origem:</strong> Com o tráfego sendo distribuído entre vários servidores, a carga no servidor principal é reduzida, melhorando sua performance.</li>
+            <li><strong>Aumento da disponibilidade e redundância:</strong> Em caso de falha em um servidor, outros servidores na rede podem continuar a fornecer o conteúdo, aumentando a disponibilidade do site.</li>
+            <li><strong>Proteção contra ataques DDoS:</strong> Muitas CDNs oferecem proteção contra ataques de negação de serviço distribuída (DDoS), ajudando a manter o site online durante ataques.</li>
+        </ul>
+        <h2 class="text-2xl font-semibold mb-2">Como funciona uma CDN:</h2>
+        <p class="mb-4">
+            Quando um usuário faz uma solicitação para acessar um site, a CDN redireciona essa solicitação para o servidor mais próximo geograficamente. Esse servidor armazena em cache cópias do conteúdo estático do site, como imagens, vídeos e arquivos CSS/JS, garantindo um carregamento mais rápido.
+        </p>
+        <div class="bg-gray-800 text-white p-4 rounded-lg relative">
+            <pre class="overflow-auto"><code class="language-html">
+&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;
+            </code></pre>
+            <button class="absolute top-2 right-2 bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600" onclick="copyCode()">Copiar</button>
+        </div>
+    </div>
+    <script>
+        function copyCode() {
+            const codeBlock = document.querySelector('pre code').innerText;
+            navigator.clipboard.writeText(codeBlock).then(() => {
+                alert('Código copiado para a área de transferência!');
+            });
+        }
+    </script>
+</body>
+</html>
